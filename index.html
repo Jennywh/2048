@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="manifest" href="manifest.json" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=0.75" />
 
@@ -158,7 +159,7 @@
           transform: translate(-50%, 0px);
           color: #664033;
           text-align: center;
-          font-size: 40px;
+          font-size: 45px;
           line-height: 108px;
           border-radius: 5px;
           touch-action: none;
@@ -200,13 +201,15 @@
         }
       }
     </style>
-    <link rel="manifest" href="./manifest.json" />
   </head>
   <body class="text-center" style="background-color: #faf8ef">
-    <h1 class="text-warning title">2048 ❤</h1>
+    <h1 class="text-warning title">2048</h1>
 
     <div class="line-2">
-      <button id="restart" class="btn-lg btn-outline-info">restart</button>
+      <button id="restart" class="btn-lg ">restart</button>
+      <div style="flex-grow: 1;"></div>
+      <button id="install-button" style="display: none;" class="btn-lg" onclick="install();">install</button>
+      <div style="flex-grow: 10;"></div>
 
       <code class="score">
         Score:
@@ -222,8 +225,7 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -236,6 +238,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./game.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -1,16 +1,20 @@
 {
-    "name": "PWAConf",
-    "short_name": "PWAConf",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#2A3443",
-    "description": "A demo app for a fictional conference",
-    "theme_color": "#2A3443",
+    "short_name": "2048",
+    "name": "2048",
     "icons": [
       {
-        "src": "./img/icons/icon-512x512.png",
-        "sizes": "512x512",
+        "src": "favicon.ico",
+        "sizes": "128x128 64x64 48x48 24x24 16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "favicon.png",
+        "sizes": "144x144",
         "type": "image/png"
       }
-    ]
-  }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
