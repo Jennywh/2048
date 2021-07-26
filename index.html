@@ -219,8 +219,12 @@
 
     <div class="wrapper">
       <div id="game-board"></div>
-      <div id="over">Try Again!</div>
-      <div id="won">You Won!</div>
+      <div id="over">
+      <span>Try Again!</span>
+      </div>
+      <div id="won">You Won!
+          <button onclick="myFunction()">I can do better!!</button>
+      </div>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -239,5 +243,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="./index.js"></script>
+    <script>
+      function myFunction(){
+        $('#won').css('display', 'none')
+          game.won = false
+          game.goal = 4096
+      }
+    </script>
   </body>
 </html>
